@@ -1,16 +1,5 @@
+import Dashboard from '@/components/dashboard/dashboard';
+
 export default function Home() {
-return (
-<div
-style={{
-minHeight: '100vh',
-display: 'flex',
-alignItems: 'center',
-justifyContent: 'center',
-fontSize: '32px',
-fontWeight: 'bold',
-}}
->
-BSMS TEST PAGE
-</div>
-);
+  return <Dashboard />;
 }
