@@ -1,3 +1,3 @@
-export function Sidebar() {
+export function Sidebar(props: any) {
   return null;
 }
