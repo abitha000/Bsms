@@ -1,6 +1,6 @@
 export function useToast() {
   return {
-    toast: () => {},
+    toast: (_data?:any) => {},
     dismiss: () => {},
     toasts: [],
   };
