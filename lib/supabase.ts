@@ -7,8 +7,11 @@ let supabaseInstance: ReturnType<typeof createClient> | null = null;
 
 export function getSupabase() {
   if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error('Supabase environment variables are not configured');
-  }
+  console.error('Supabase environment variables are not configured');
+  console.log('URL:', process.env.NEXT_PUBLIC_SUPABASE_URL);
+  console.log('KEY EXISTS:', !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+  return null as any;
+}
 
   if (!supabaseInstance) {
     supabaseInstance = createClient(supabaseUrl, supabaseAnonKey);
