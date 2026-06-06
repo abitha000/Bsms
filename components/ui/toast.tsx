@@ -1,3 +1,6 @@
+export type ToastActionElement = any;
+export type ToastProps = any;
+
 export const ToastProvider = ({ children }: any) => <>{children}</>
 
 export const ToastViewport = (props: any) => null
